@@ -1,0 +1,289 @@
+:root{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    --primary-color: #e50914;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+ 
+body{
+    font-family: Arial, sans-serif;
+    background-color: black;
+    -webkit-font-smoothing: antialiased;
+    color: #999;
+}
+
+ul{
+    list-style: none;
+}
+
+h1, h2, h3, h4{
+    color: #fff;
+}
+
+.mt-mb{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.showcase{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('../img/netflix-bg.jpg') no-repeat center center/cover;
+}
+
+.showcase::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 2rem 2rem 10rem #000;
+}
+
+.showcase-top{
+    position: relative;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    padding-top: 2.2rem;
+}
+
+.main-logo-container img{
+    padding-left: 14.8rem;
+    width: 15rem;
+}
+
+.main-btn-container{
+    display: flex;
+    margin-right: 1.6rem;
+}
+
+/*.container{
+    width: 90%;
+} */
+
+.input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#language-options{
+    padding: 0.6rem 3rem;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.language-selector{
+    margin-right: 1rem; 
+}
+
+option:hover{
+    color: black;
+}
+
+.small-btn{
+    padding: 0.6rem 3rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    line-height: 2rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.small-btn:hover{
+    background: #e50914e6;
+}
+
+.showcase-bottom{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-box{
+    width: 60rem;
+    line-height: 6.5rem;
+}
+
+.content-box h1{
+    font-size: 5.5rem;
+    font-weight: 800;
+}
+
+.content-box h2{
+    font-size: 2rem;;
+}
+
+.content-box h3{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.input-box input{
+    padding: 1.8rem 18rem 1.8rem 1rem;
+    background: rgba(22, 22, 22, 0.7);
+    border: 0.1rem solid;
+    border-radius: 0.5rem;
+    border-color: rgba(128, 128, 128, 0.7);
+    font-size: 1.6rem;
+}
+
+.btn-lg{
+    padding: 1.3rem 5rem 1.3rem 2.5rem;
+    background-color: var(--primary-color);
+    margin-left: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn-lg:hover{
+    background-color: #e50914e6;
+}
+
+.fa-chevron-right{
+    font-weight: 900;
+    position: absolute;
+    margin-left: 1rem;
+}
+
+::placeholder{
+    color: white;
+    font-weight: 500;
+}
+
+.curve-cover{
+    position: relative;
+    top: 83%;
+}
+
+.curver-radius{
+    height: 5rem;
+    margin-top: -2rem;
+    border-top-left-radius: 50% 70%;
+    border-top-right-radius: 50% 70%;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+
+}
+
+.curve-boundry{
+    height: 4.6rem;
+    border-top-left-radius: 50% 70%;
+    border-top-right-radius: 50% 70%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+
+.main-div{
+    margin: 2.5rem auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* .main-div-container{
+    width: 80%;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.main-div-container h2{
+    display: inline;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.trending-selector{
+    margin: 2rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.trending-options{
+    padding: 1.2rem 5rem 1.2rem 1rem;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+/* Tab content css */
+
+.tab-container-each button{
+    position: relative;
+    display: block;
+    width: 100%;
+    color: white;
+    background: #2d2d2d;
+    text-align: left;
+    border: none;
+    padding: 2.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.tab-container-each button:hover{
+    background-color: rgb(65,65,65);
+}
+
+.tab-container-each{
+    margin-bottom: 1rem;
+}
+
+.tab-icon{
+    position: absolute;
+    right: 30px;
+    top: 38px;
+    font-size: 7rem;
+}
+
+.tab-content-container{
+    padding: 2rem;
+    margin-top: 0.1rem;
+    background: #2d2d2d;
+}
+
+.tab-content-container p{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: white;
+
+}
